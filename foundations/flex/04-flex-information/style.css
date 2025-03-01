@@ -1,5 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Courier New', Courier, monospace;
+  width: 100%;
+  min-height: 100vh;
 }
 
 img {
@@ -11,6 +19,29 @@ img {
   font-size: 36px;
   font-weight: 900;
 }
+
+/* SOLUTION start */
+
+.main-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 32px;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 52px;
+}
+
+.card {
+  flex: 0 1 200px;
+  text-wrap: wrap;
+}
+
+/* SOLUTION end */
 
 /* do not edit this footer */
 .footer {
